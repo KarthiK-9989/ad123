@@ -1,0 +1,230 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#plypause {
+    margin-top: 100px;
+    margin-left: 450px;
+    background-color: chocolate;
+}
+
+#stop {
+    margin-top: 100px;
+    margin-left: 450px;
+    background-color: cyan;
+}
+
+body {
+    background-color: #003333;
+}
+
+h1 {
+    background-color: #33ff00;
+    display: inline;
+}
+
+.hr {
+    width: 150px;
+    height: 150px;
+}
+
+.min {
+    width: 200px;
+    height: 200px;
+}
+
+.sec {
+    width: 250px;
+    height: 250px;
+}
+
+.hr,
+.min,
+.sec {
+    position: absolute;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.clock::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.hr::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 75px;
+    background-color: black;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.min::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 100px;
+    background-color: black;
+    z-index: 11;
+    border-radius: 50%;
+}
+
+.sec::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 150px;
+    background-color: black;
+    z-index: 12;
+    border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        box-shadow: 15px 15px 30px #665800, -15px -15px 30px #ffff00;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .container {
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        box-shadow: 15px 15px 30px #665800, -15px -15px 30px #ffff00;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        box-shadow: 15px 15px 30px #665800, -15px -15px 30px #ffff00;
+    }
+}
+
+@media (max-width: 480px) {
+    .clock {
+        height: 225px;
+        width: 225px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        background-image: url(image.png);
+        background-size: cover;
+        box-shadow: inset 15px 15px 30px #665800, inset -15px -15px 30px #ffff00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .clock {
+        height: 325px;
+        width: 325px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        background-image: url(image.png);
+        background-size: cover;
+        box-shadow: inset 15px 15px 30px #665800, inset -15px -15px 30px #ffff00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    .clock {
+        height: 325px;
+        width: 325px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        background-image: url(image.png);
+        background-size: cover;
+        box-shadow: inset 15px 15px 30px #665800, inset -15px -15px 30px #ffff00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #plypause {
+        margin-top: 50px;
+        margin-left: 80px;
+        background-color: chocolate;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    #plypause {
+        margin-top: 80px;
+        margin-left: 200px;
+        background-color: chocolate;
+    }
+}
+
+@media (min-width: 1025px) {
+    #plypause {
+        margin-top: 80px;
+        margin-left: 200px;
+        background-color: chocolate;
+    }
+}
+
+@media (max-width: 480px) {
+    #stop {
+        margin-top: 50px;
+        margin-left: 80px;
+        background-color: cyan;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    #stop {
+        margin-top: 80px;
+        margin-left: 400px;
+        background-color: cyan;
+    }
+}
+
+@media (min-width: 1025px) {
+    #stop {
+        margin-top: 80px;
+        margin-left: 500px;
+        background-color: cyan;
+    }
+}
